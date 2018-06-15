@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "837130758345",
+    "firebase_url": "https://onetouchdevkit.firebaseio.com",
+    "project_id": "onetouchdevkit",
+    "storage_bucket": "onetouchdevkit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837130758345:android:378b1985614dc9d9",
+        "android_client_info": {
+          "package_name": "com.manju23reddy.onetouchdevkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837130758345-nf37nvrp1sk9rrtj08hm3fee5a0lhvd0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "837130758345-nf37nvrp1sk9rrtj08hm3fee5a0lhvd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp7JTv3FIdp3E_hV2QA9m6XJPlJ4W5irU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="#99000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="17sp"
+        android:text="@string/device_setting_motor"
+        android:gravity="start|center_vertical"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/txt_title_motor"/>
+
+    <Switch
+        android:id="@+id/switch_motor_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:textColor="@color/colorWhite"
+        android:text="ON / OFF   "
+        android:textAlignment="viewStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/lyt_motor_settings"
+        android:visibility="gone"
+        android:layout_below="@id/txt_title_motor">
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motor Short Pulse"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="viewStart"
+                android:id="@+id/radiobtn_motor_short_pulse"
+                />
+
+            <RadioButton
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_motor_long_pulse"
+                android:text="Motor Long Pulse"
+                android:textAlignment="viewStart"/>
+
+            <RadioButton
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_motor_short_3_pulse"
+                android:text="Motor Short 3 Pulse"
+                android:textAlignment="viewStart"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="#99000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="17sp"
+        android:text="@string/device_setting_buzzer"
+        android:gravity="start|center_vertical"
+        android:paddingStart="10dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:id="@+id/txt_title_buzzer"/>
+
+    <Switch
+        android:id="@+id/switch_buzzer_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:text="ON / OFF   "
+        android:textColor="@color/colorWhite"
+        android:textAlignment="viewStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/lyt_buzzer_settings"
+        android:visibility="gone"
+        android:layout_below="@id/txt_title_buzzer">
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/switch_led_on_off">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buzzer Short Pulse"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="viewStart"
+                android:id="@+id/radiobtn_buzzer_short_pulse"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_buzzer_long_pulse"
+                android:text="Buzzer Long Pulse"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="viewStart"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_buzzer_short_3_pulse"
+                android:textColor="@color/colorWhite"
+                android:text="Buzzer Short 3 Pulse"
+                android:textAlignment="viewStart"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

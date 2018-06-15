@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="#99000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="17sp"
+        android:text="@string/device_settings_rgbs"
+        android:gravity="start|center_vertical"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/txt_title_rgb"/>
+
+    <Switch
+        android:id="@+id/switch_rgb_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="27dp"
+        android:text="ON / OFF   "
+        android:textColor="@color/colorWhite"
+        android:textAlignment="viewStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/lyt_rgb_settings"
+        android:visibility="gone"
+        android:layout_below="@id/txt_title_rgb">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="RGB Color"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="RED"
+                android:textColor="#e52d21"
+                android:textAlignment="viewStart"
+                android:id="@+id/radiobtn_rgb_red"
+                />
+
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_rgb_green"
+                android:text="GREEN"
+                android:textColor="#45e521"
+                android:textAlignment="viewStart"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiobtn_rgb_blue"
+                android:text="BLUE"
+                android:textColor="#2177e5"
+                android:textAlignment="viewStart"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
